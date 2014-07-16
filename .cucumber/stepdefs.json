@@ -1,0 +1,121 @@
+[
+  {
+    "steps": [
+      {
+        "name": "I add 1 and 2",
+        "args": [
+          {
+            "offset": 6,
+            "val": "1"
+          },
+          {
+            "offset": 12,
+            "val": "2"
+          }
+        ]
+      },
+      {
+        "name": "I add 10 and 20",
+        "args": [
+          {
+            "offset": 6,
+            "val": "10"
+          },
+          {
+            "offset": 13,
+            "val": "20"
+          }
+        ]
+      },
+      {
+        "name": "I add 2 and 2",
+        "args": [
+          {
+            "offset": 6,
+            "val": "2"
+          },
+          {
+            "offset": 12,
+            "val": "2"
+          }
+        ]
+      },
+      {
+        "name": "I add 20 and 20",
+        "args": [
+          {
+            "offset": 6,
+            "val": "20"
+          },
+          {
+            "offset": 13,
+            "val": "20"
+          }
+        ]
+      }
+    ],
+    "source": "^I add (\\d+) and (\\d+)$",
+    "flags": ""
+  },
+  {
+    "steps": [
+      {
+        "name": "I have a calculator",
+        "args": []
+      }
+    ],
+    "source": "^I have a calculator$",
+    "flags": ""
+  },
+  {
+    "steps": [
+      {
+        "name": "the result should be 3",
+        "args": [
+          {
+            "offset": 21,
+            "val": "3"
+          }
+        ]
+      },
+      {
+        "name": "the result should be 30",
+        "args": [
+          {
+            "offset": 21,
+            "val": "30"
+          }
+        ]
+      },
+      {
+        "name": "the result should be 303",
+        "args": [
+          {
+            "offset": 21,
+            "val": "303"
+          }
+        ]
+      },
+      {
+        "name": "the result should be 4",
+        "args": [
+          {
+            "offset": 21,
+            "val": "4"
+          }
+        ]
+      },
+      {
+        "name": "the result should be 40",
+        "args": [
+          {
+            "offset": 21,
+            "val": "40"
+          }
+        ]
+      }
+    ],
+    "source": "the result should be (\\d+)$",
+    "flags": ""
+  }
+]
